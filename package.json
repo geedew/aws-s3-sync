@@ -1,0 +1,35 @@
+{
+  "name": "aws-s3-sync",
+  "version": "0.0.0",
+  "description": "An AWS wrapper script for S3 that creates easy to use functions for common issues.",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "aws-sdk": "~2.0.0-rc.14",
+    "grunt": "~0.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/geedew/aws-s3-sync.git"
+  },
+  "keywords": [
+    "s3",
+    "aws",
+    "sync",
+    "library",
+    "copy",
+    "upload"
+  ],
+  "author": "Drew Wilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geedew/aws-s3-sync/issues"
+  },
+  "homepage": "https://github.com/geedew/aws-s3-sync"
+}
