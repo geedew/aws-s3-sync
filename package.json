@@ -10,7 +10,9 @@
     "aws-sdk": "~2.0.0-rc.14",
     "grunt": "~0.4.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jslint": "^0.3.3"
+  },
   "scripts": {
     "test": "test"
   },
