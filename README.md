@@ -1,3 +1,2 @@
-# A repo that is a basic flow to setting up and creating a new project
-
+## Wraps the AWS SDK and implements some common functionalities
 
