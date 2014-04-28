@@ -1,12 +1,9 @@
-/* Global Scope */
-;(function() {
-	'use strict';
-	var s3sync = {};	
+'use strict';
+var AWS = require('aws-sdk');
+var s3 = new AWS.S3();
+var s3sync = {};	
 
-	/* Handle rendering in the browser */
-	if(typeof module !== 'undefined' && module.exports) {
-		module.exports = s3sync;
-	} else {
-		window.s3sync = s3sync;
-	}
-})();
+	
+
+/* Handle rendering in the browser */
+module.exports = s3sync;
