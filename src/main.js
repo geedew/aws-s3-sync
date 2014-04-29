@@ -1,9 +1,4 @@
-'use strict';
-var AWS = require('aws-sdk');
-var s3 = new AWS.S3();
-var s3sync = {};	
+/* Just the basic file loader */
+var s3sync = require('./lib/s3sync.js');	
 
-	
-
-/* Handle rendering in the browser */
 module.exports = s3sync;
