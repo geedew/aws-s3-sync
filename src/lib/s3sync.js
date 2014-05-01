@@ -14,13 +14,28 @@ if(fs.exsistsSync(APPPATH + '/config.json')) {
 var s3 = new AWS.S3();
 var s3sync = {};
 
-s3sync.sync = function(options) {
+s3sync.setOptions = function(options) { 
+  if(options) { this.options = options; }
+  return this.options;
+};
+s3sync.getOptions = function() {
+  return this.options;
+};
+
+s3sync.sync = function(files, options) {
   var response;
   var params = { };
+  var defer = Q.defer();
 
-  return function() {
-  };
+  // basic setting of options (probably will alter to an extend instead) 
+  if(typeof options !== undefined ) { 
+    this.options = options;
+  }
+
   
+ options.files.forEach(function() {
+ 
+ });
  // loop through files
    // Make sure bucket exists if set
      // Create bucket if not existent
@@ -28,6 +43,7 @@ s3sync.sync = function(options) {
      // encoding, md5, body, ACL (if set), expires, encryption, 
    // Put Object, save Callback for a 'when' statement
 
+  return defer;
 };
 
 module.exports = s3sync;
